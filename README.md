@@ -5,13 +5,10 @@ The frontend is built using React + Vite + TailwindCSS and connects to a Golang 
 
 🚀 Tech Stack
 
-React (Vite)
-
-TailwindCSS
-
-Axios
-
-React Router
+React (Vite)   ,
+TailwindCSS    ,
+Axios    ,
+React Router  .
 
 📁 Folder Structure
 inventory-frontend/
@@ -50,34 +47,28 @@ Backend must be running on:
 http://localhost:8080
 
 🔗 API Endpoints Used
-Method	Endpoint
+Method	  Endpoint
 POST	/api/products
 GET	/api/products
 POST	/api/stock/in
 POST	/api/stock/out
 GET	/api/stock/report
+
+
+
 🧩 Features Implemented
 
-Product Creation with Variants & Sub-Variants
-
-Product Listing with Stock
-
-Full Product Details View (on click)
-
-Stock In (Purchase)
-
-Stock Out (Sale)
-
-Stock Report with Date Filter
+Product Creation with Variants & Sub-Variants  ,
+Product Listing with Stock   ,
+Full Product Details View (on click)  ,
+Stock In (Purchase)    ,
+Stock Out (Sale)   ,
+Stock Report with Date Filter  .
 
 🧪 How to Test
 
 Create a Product
-
 Copy Product UUID & Sub-Variant UUID
-
 Perform Stock In
-
 Perform Stock Out
-
 View Stock Report
