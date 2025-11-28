@@ -1,16 +1,83 @@
-# React + Vite
+✅ Inventory Management System – Frontend (Machine Test)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the Frontend implementation of the Inventory Management System developed as part of a Machine Test Assignment.
+The frontend is built using React + Vite + TailwindCSS and connects to a Golang (Gin) backend.
 
-Currently, two official plugins are available:
+🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React (Vite)
 
-## React Compiler
+TailwindCSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Axios
 
-## Expanding the ESLint configuration
+React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📁 Folder Structure
+inventory-frontend/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── pages/
+│   │   ├── ProductList.jsx
+│   │   ├── ProductDetails.jsx
+│   │   ├── CreateProduct.jsx
+│   │   ├── StockIn.jsx
+│   │   ├── StockOut.jsx
+│   │   └── StockReport.jsx
+│   │
+│   ├── App.js
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+└── vite.config.js
+
+⚙️ Setup & Run
+npm install
+npm run dev
+
+
+Frontend runs on:
+
+http://localhost:5173
+
+
+Backend must be running on:
+
+http://localhost:8080
+
+🔗 API Endpoints Used
+Method	Endpoint
+POST	/api/products
+GET	/api/products
+POST	/api/stock/in
+POST	/api/stock/out
+GET	/api/stock/report
+🧩 Features Implemented
+
+Product Creation with Variants & Sub-Variants
+
+Product Listing with Stock
+
+Full Product Details View (on click)
+
+Stock In (Purchase)
+
+Stock Out (Sale)
+
+Stock Report with Date Filter
+
+🧪 How to Test
+
+Create a Product
+
+Copy Product UUID & Sub-Variant UUID
+
+Perform Stock In
+
+Perform Stock Out
+
+View Stock Report
